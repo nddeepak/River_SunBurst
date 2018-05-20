@@ -6,6 +6,9 @@ library(shinydashboard)
 library(plotly)
 library(sunburstR)
 library(sqldf)
+library(rsconnect)
+library(readr)
+library(googleVis)
 
 initial_data = as.data.frame(read_csv("./data/Karnataka1.csv",col_names = TRUE))
 
@@ -32,10 +35,12 @@ ui <- dashboardPage(
       
       tabItem(tabName = "River",
                 uiOutput("radio"),
-              uiOutput("dropdown")
-              ,plotlyOutput("river")
-              ,sunburstOutput("sunburst")
-      ),
+              uiOutput("dropdown"), tabsetPanel(
+                tabPanel("Sankey"
+              ,plotlyOutput("river",height = 700)), 
+              tabPanel("Sun burst",sunburstOutput("sunburst")),
+              tabPanel("GoogleVis",htmlOutput("gviswidget"))
+      )),
       tabItem(tabName = "Data", 
               DT::dataTableOutput("dtab")
       )
@@ -64,11 +69,28 @@ server <- function(input, output) {
 
     allName = names(my_data)
     nonnumerics= allName[!(allName %in% names(Filter(is.numeric, my_data)))]
+    
+    alldataBind = my_data[1,]
+    for(j in 1:length(alldataBind))
+    {
+      if(is.numeric(alldataBind[,j]))
+      {
+        alldataBind[,j]=0
+      }
+      else
+      {
+        alldataBind[,j]="All"
+      }
+        
+    }
+    
+    
+    my_data = rbind(my_data,alldataBind)
 
     lapply(1:length(nonnumerics), function(i) {
-      #unique function for one distinct value?? 
+      #unique function for one distinct value?? not able to add "all" in choices hence a new dataset bind
 
-      selectInput(inputId = paste0("ind", i),label = nonnumerics[i],choices = unique(my_data[,nonnumerics[i]]) ,multiple = TRUE, selected = unique(my_data[,nonnumerics[i]]) )
+      selectInput(inputId = paste0("ind", i),label = nonnumerics[i],choices = unique(my_data[,nonnumerics[i]]) ,multiple = TRUE, selected = "All")
     })
   })
   
@@ -95,7 +117,7 @@ server <- function(input, output) {
     allName = names(my_data)
     nonnumerics= allName[!(allName %in% names(Filter(is.numeric, my_data)))]
     
-    selectInput("slevel","Select 2 or more categories",choices = nonnumerics,multiple = TRUE)
+    selectInput("slevel","Select 2 or more categories (Ordered, river flow and sunburst layers)",choices = nonnumerics,multiple = TRUE)
   })
   
   
@@ -110,7 +132,11 @@ server <- function(input, output) {
     for(i in 1:length(nonnumerics))
     {
         #filter data based on dynamic dropdown list
+      if(!("All" %in% input[[paste0("ind", i)]]))
+      {
         my_data = my_data[my_data[,nonnumerics[i]] %in% input[[paste0("ind", i)]],]
+      }
+        
     }
     
     
@@ -131,7 +157,10 @@ server <- function(input, output) {
       for(i in 1:length(nonnumerics))
       {
         
-        my_data = my_data[my_data[,nonnumerics[i]] %in% input[[paste0("ind", i)]],]
+         if(!("All" %in% input[[paste0("ind", i)]]))
+         {
+          my_data = my_data[my_data[,nonnumerics[i]] %in% input[[paste0("ind", i)]],]
+         }
       } 
       
       write.csv(my_data,file)
@@ -149,7 +178,10 @@ server <- function(input, output) {
     for(i in 1:length(nonnumerics))
     {
       
-      my_data = my_data[my_data[,nonnumerics[i]] %in% input[[paste0("ind", i)]],]
+      if(!("All" %in% input[[paste0("ind", i)]]))
+      {
+        my_data = my_data[my_data[,nonnumerics[i]] %in% input[[paste0("ind", i)]],]
+      }
     }
     
     #check if more than 1 category selected
@@ -214,7 +246,52 @@ server <- function(input, output) {
    })
   
 
+  output$gviswidget <- renderGvis({
+    my_data = waitDatav$my_data
+    if(is.null(my_data))
+      my_data=initial_data
     
+    allName = names(my_data)
+    nonnumerics= allName[!(allName %in% names(Filter(is.numeric, my_data)))]
+    
+    for(i in 1:length(nonnumerics))
+    {
+      
+      if(!("All" %in% input[[paste0("ind", i)]]))
+      {
+        my_data = my_data[my_data[,nonnumerics[i]] %in% input[[paste0("ind", i)]],]
+      }
+    }
+    
+    if(length(input$slevel)>=2)
+    {
+      whilei = 1
+      
+      bubdata=my_data[0,]
+      
+      #rbind each dataset grouped by (i,i+1) & (i+1,i+2)...
+      while(whilei<length(input$slevel))
+      {
+        #SUM is the aggregate function. This can be made dynamic. For sankey plots COUNT, SUM are ideal.
+        querywhile = paste0("select ",input$slevel[whilei]," as Fromf, ",input$slevel[whilei+1]," as Tote, Sum(",input$variable,") as '",input$variable,"' from my_data group by ",input$slevel[whilei], ", ",input$slevel[whilei+1])
+        
+        bubdata = rbind( bubdata,sqldf(querywhile))
+        
+        whilei = whilei+1
+      }
+      
+      gvisSankey(bubdata, from="Fromf", 
+                                 to="Tote", weight=input$variable,
+                                 options=list(
+                                   
+                                   #sankey="{node: { colors: [ 'Red' ] }, link:{colorMode:'gradient', colors:['lightblue','Red','Green','Yellow','Orange','Blue','Grey']}}"
+                                   sankey="{link:{colors:['Grey']}}"
+
+                                 ))
+      
+    }
+    
+  })
     
   
 
@@ -229,7 +306,10 @@ server <- function(input, output) {
      for(i in 1:length(nonnumerics))
      {
        
-       my_data = my_data[my_data[,nonnumerics[i]] %in% input[[paste0("ind", i)]],]
+       if(!("All" %in% input[[paste0("ind", i)]]))
+       {
+         my_data = my_data[my_data[,nonnumerics[i]] %in% input[[paste0("ind", i)]],]
+       }
      }
      
      

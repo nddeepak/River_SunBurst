@@ -1,35 +1,184 @@
-Constituency,Region,Party,Gender,Caste,Votes
-Shimoga,Central Karnataka,BJP,M,A,2
-Shimoga,Central Karnataka,BJP,M,B,3
-Shimoga,Central Karnataka,BJP,M,C,4
-Shimoga,Central Karnataka,BJP,F,A,3
-Shimoga,Central Karnataka,BJP,F,B,4
-Shimoga,Central Karnataka,BJP,F,C,5
-Shimoga,Central Karnataka,Congress,M,A,6
-Shimoga,Central Karnataka,Congress,M,B,2
-Shimoga,Central Karnataka,Congress,M,C,1
-Shimoga,Central Karnataka,Congress,F,A,7
-Shimoga,Central Karnataka,Congress,F,B,3
-Shimoga,Central Karnataka,Congress,F,C,1
-Shimoga,Central Karnataka,JDS,F,C,1
-Shimoga,Central Karnataka,JDS,M,A,2
-Shimoga,Central Karnataka,Others,M,B,3
-Bhadravati,Central Karnataka,BJP,M,C,4
-Bhadravati,Central Karnataka,BJP,F,A,6
-Bhadravati,Central Karnataka,BJP,F,B,2
-Bhadravati,Central Karnataka,BJP,F,C,5
-Bhadravati,Central Karnataka,Congress,M,A,1
-Bhadravati,Central Karnataka,Congress,M,B,9
-Bhadravati,Central Karnataka,Congress,M,C,1
-Bhadravati,Central Karnataka,Congress,F,A,11
-Bhadravati,Central Karnataka,Congress,F,B,3
-Bhadravati,Central Karnataka,Congress,F,C,3
-Mangalore,Coastal Karnataka,Congress,F,A,7
-Mangalore,Coastal Karnataka,Congress,F,B,3
-Mangalore,Coastal Karnataka,Congress,F,C,8
-Mangalore,Coastal Karnataka,JDS,F,C,1
-Mangalore,Coastal Karnataka,JDS,M,A,2
-Mangalore,Coastal Karnataka,Others,M,B,12
-Mangalore,Coastal Karnataka,BJP,M,C,4
-Mangalore,Coastal Karnataka,BJP,F,A,3
-Mangalore,Coastal Karnataka,BJP,F,B,7
+Candidate,Party,Votes,Constituency,Region,Result,Seats
+M Y PATIL,Indian National Congress,71735,Afzalpur,Hyderabad Karnataka,Won,1
+MALIKAYYA GUTTEDAR,Bharatiya Janata Party,61141,Afzalpur,Hyderabad Karnataka,Lost,0
+RAJU GOUDA REVOOR,Janata Dal (Secular),13340,Afzalpur,Hyderabad Karnataka,Lost,0
+Other,Others,2249,Afzalpur,Hyderabad Karnataka,Lost,0
+None of the Above,None of the Above,1243,Afzalpur,Hyderabad Karnataka,Lost,0
+GUTTEDAR SUBHASH RUKMAYYA,Bharatiya Janata Party,76815,Aland,Hyderabad Karnataka,Won,1
+B R PATIL,Indian National Congress,76118,Aland,Hyderabad Karnataka,Lost,0
+Other,Others,4844,Aland,Hyderabad Karnataka,Lost,0
+SURYAKANT K KORALLI,Janata Dal (Secular),1387,Aland,Hyderabad Karnataka,Lost,0
+None of the Above,None of the Above,1445,Aland,Hyderabad Karnataka,Lost,0
+B.SHIVANNA,Indian National Congress,113894,Anekal,Bengaluru Karnataka,Won,1
+A.NARAYANASWAMY,Bharatiya Janata Party,105267,Anekal,Bengaluru Karnataka,Lost,0
+Other,Others,6401,Anekal,Bengaluru Karnataka,Lost,0
+None of the Above,None of the Above,2115,Anekal,Bengaluru Karnataka,Lost,0
+BALACHANDRA LAKSHMANARAO JARAKIHOLI,Bharatiya Janata Party,96144,Arabhavi,Mumbai Karnataka,Won,1
+BHIMAPPA GUNDAPPA GADAD,Janata Dal (Secular),48816,Arabhavi,Mumbai Karnataka,Lost,0
+ARVIND MAHADEVRAO DALWAI,Indian National Congress,23253,Arabhavi,Mumbai Karnataka,Lost,0
+Other,Others,7325,Arabhavi,Mumbai Karnataka,Lost,0
+None of the Above,None of the Above,1398,Arabhavi,Mumbai Karnataka,Lost,0
+A. T. RAMASWAMY,Janata Dal (Secular),85064,Arkalgud,Old Mysore,Won,1
+MANJU .A,Indian National Congress,74411,Arkalgud,Old Mysore,Lost,0
+H. YOGARAMESHA,Bharatiya Janata Party,22679,Arkalgud,Old Mysore,Lost,0
+Other,Others,5561,Arkalgud,Old Mysore,Lost,0
+None of the Above,None of the Above,1189,Arkalgud,Old Mysore,Lost,0
+K.M SHIVALINGE GOWDA,Janata Dal (Secular),93986,Arsikere,Old Mysore,Won,1
+G.B.SHASHIDHARA,Indian National Congress,50297,Arsikere,Old Mysore,Lost,0
+G. MARISWAMY,Bharatiya Janata Party,25258,Arsikere,Old Mysore,Lost,0
+Other,Others,2339,Arsikere,Old Mysore,Lost,0
+None of the Above,None of the Above,1079,Arsikere,Old Mysore,Lost,0
+MAHESH IRANAGOUDA KUMATHALLI,Indian National Congress,82094,Athani,Mumbai Karnataka,Won,1
+LAXMAN SANGAPPA SAVADI,Bharatiya Janata Party,79763,Athani,Mumbai Karnataka,Lost,0
+GIRISH KEDAREPPA BUTALI,Janata Dal (Secular),3381,Athani,Mumbai Karnataka,Lost,0
+Other,Others,4485,Athani,Mumbai Karnataka,Lost,0
+None of the Above,None of the Above,842,Athani,Mumbai Karnataka,Lost,0
+PRABHU CHAUHAN,Bharatiya Janata Party,75061,Aurad,Hyderabad Karnataka,Won,1
+VIJAYKUMAR,Indian National Congress,64469,Aurad,Hyderabad Karnataka,Lost,0
+DHANAJI,Janata Dal (Secular),2605,Aurad,Hyderabad Karnataka,Lost,0
+Other,Others,4310,Aurad,Hyderabad Karnataka,Lost,0
+None of the Above,None of the Above,964,Aurad,Hyderabad Karnataka,Lost,0
+RAMALINGA REDDY,Indian National Congress,67085,BTM Layout,Bengaluru Karnataka,Won,1
+LALLESH REDDY,Bharatiya Janata Party,46607,BTM Layout,Bengaluru Karnataka,Lost,0
+K DEVADAS,Janata Dal (Secular),17307,BTM Layout,Bengaluru Karnataka,Lost,0
+Other,Others,2568,BTM Layout,Bengaluru Karnataka,Lost,0
+None of the Above,None of the Above,2365,BTM Layout,Bengaluru Karnataka,Lost,0
+MALLANAGOUD BASANAGOUD PATIL,Indian National Congress,98339,Babaleshwar,Hyderabad Karnataka,Won,1
+VIJAYAKUMAR SIDRAMGOUDA PATIL,Bharatiya Janata Party,68624,Babaleshwar,Hyderabad Karnataka,Lost,0
+Other,Others,2896,Babaleshwar,Hyderabad Karnataka,Lost,0
+None of the Above,None of the Above,1786,Babaleshwar,Hyderabad Karnataka,Lost,0
+SIDDARAMAIAH,Indian National Congress,67599,Badami,Mumbai Karnataka,Won,1
+B SREERAMULU,Bharatiya Janata Party,65903,Badami,Mumbai Karnataka,Lost,0
+HANAMANT MAVINAMARAD,Janata Dal (Secular),24484,Badami,Mumbai Karnataka,Lost,0
+Other,Others,3932,Badami,Mumbai Karnataka,Lost,0
+None of the Above,None of the Above,2007,Badami,Mumbai Karnataka,Lost,0
+VEERABHADRAYYA (VEERANNA) CHARANTIMATH,Bharatiya Janata Party,85653,Bagalkot,Mumbai Karnataka,Won,1
+METI HULLAPPA YAMANAPPA,Indian National Congress,69719,Bagalkot,Mumbai Karnataka,Lost,0
+Other,Others,4237,Bagalkot,Mumbai Karnataka,Lost,0
+None of the Above,None of the Above,1902,Bagalkot,Mumbai Karnataka,Lost,0
+S.N. SUBBAREDDY(CHINNAKAYALAPALLI),Indian National Congress,65710,Bagepalli,Central Karnataka,Won,1
+Other,Others,55696,Bagepalli,Central Karnataka,Lost,0
+DR. C. R. MANOHAR,Janata Dal (Secular),38302,Bagepalli,Central Karnataka,Lost,0
+SAIKUMAR. P.,Bharatiya Janata Party,4140,Bagepalli,Central Karnataka,Lost,0
+None of the Above,None of the Above,680,Bagepalli,Central Karnataka,Lost,0
+KOUJALAGI. MAHANTESH. SHIVANAND.,Indian National Congress,47040,Bailhongal,Mumbai Karnataka,Won,1
+Other,Others,45362,Bailhongal,Mumbai Karnataka,Lost,0
+VISHWANATH IRANAGOUDA PATIL,Bharatiya Janata Party,37498,Bailhongal,Mumbai Karnataka,Lost,0
+SHANKAR. BHARAMAPPA. MADALAGI,Janata Dal (Secular),13548,Bailhongal,Mumbai Karnataka,Lost,0
+None of the Above,None of the Above,1352,Bailhongal,Mumbai Karnataka,Lost,0
+M KRISHNAPPA,Bharatiya Janata Party,152469,Bangalore South,Bengaluru Karnataka,Won,1
+R K RAMESH,Indian National Congress,122052,Bangalore South,Bengaluru Karnataka,Lost,0
+R PRABHAKAR REDDY,Janata Dal (Secular),36164,Bangalore South,Bengaluru Karnataka,Lost,0
+Other,Others,4834,Bangalore South,Bengaluru Karnataka,Lost,0
+None of the Above,None of the Above,15829,Bangalore South,Bengaluru Karnataka,Lost,0
+S.N.NARAYANASWAMY K.M,Indian National Congress,70871,Bangarpet,South Karnataka,Won,1
+M.MALLESH BABU,Janata Dal (Secular),49300,Bangarpet,South Karnataka,Lost,0
+VENKATAMUNIYAPPA B.P.,Bharatiya Janata Party,33555,Bangarpet,South Karnataka,Lost,0
+Other,Others,2001,Bangarpet,South Karnataka,Lost,0
+None of the Above,None of the Above,1127,Bangarpet,South Karnataka,Lost,0
+RAJESH NAIK U.,Bharatiya Janata Party,97802,Bantval,Coastal Karnataka,Won,1
+B RAMANATHA RAI,Indian National Congress,81831,Bantval,Coastal Karnataka,Lost,0
+Other,Others,1976,Bantval,Coastal Karnataka,Lost,0
+None of the Above,None of the Above,946,Bantval,Coastal Karnataka,Lost,0
+B. NARAYANRAO,Indian National Congress,61425,Basavakalyan,Hyderabad Karnataka,Won,1
+MALLIKARJUN SON OF SIDRAMAPPA KHUBA,Bharatiya Janata Party,44153,Basavakalyan,Hyderabad Karnataka,Lost,0
+P.G.R. SINDHIA,Janata Dal (Secular),31414,Basavakalyan,Hyderabad Karnataka,Lost,0
+Other,Others,6924,Basavakalyan,Hyderabad Karnataka,Lost,0
+None of the Above,None of the Above,1410,Basavakalyan,Hyderabad Karnataka,Lost,0
+SHIVANAND PATIL,Indian National Congress,58647,Basavana Bagevadi,Hyderabad Karnataka,Won,1
+SOMANAGOUDA(APPUGOUDA) B PATIL(MANAGULI),Janata Dal (Secular),55461,Basavana Bagevadi,Hyderabad Karnataka,Lost,0
+SANGARAJ DESAI,Bharatiya Janata Party,25501,Basavana Bagevadi,Hyderabad Karnataka,Lost,0
+Other,Others,6111,Basavana Bagevadi,Hyderabad Karnataka,Lost,0
+None of the Above,None of the Above,1684,Basavana Bagevadi,Hyderabad Karnataka,Lost,0
+RAVISUBRAMANYA.L.A,Bharatiya Janata Party,76018,Basavanagudi,Bengaluru Karnataka,Won,1
+K.BAGEGOWDA,Janata Dal (Secular),38009,Basavanagudi,Bengaluru Karnataka,Lost,0
+M.BOREGOWDA,Indian National Congress,11767,Basavanagudi,Bengaluru Karnataka,Lost,0
+Other,Others,2393,Basavanagudi,Bengaluru Karnataka,Lost,0
+None of the Above,None of the Above,1856,Basavanagudi,Bengaluru Karnataka,Lost,0
+ABHAY PATIL,Bharatiya Janata Party,84498,Belgaum Dakshin,Mumbai Karnataka,Won,1
+M D LAKSHMINARAYAN (ANNAYYA),Indian National Congress,25806,Belgaum Dakshin,Mumbai Karnataka,Lost,0
+Other,Others,33997,Belgaum Dakshin,Mumbai Karnataka,Lost,0
+CHANGADEV KUGAJI @ MAHESH KUGAJI,Janata Dal (Secular),940,Belgaum Dakshin,Mumbai Karnataka,Lost,0
+None of the Above,None of the Above,1474,Belgaum Dakshin,Mumbai Karnataka,Lost,0
+LAXMI R HEBBALKAR,Indian National Congress,102040,Belgaum Rural,Mumbai Karnataka,Won,1
+SANJAY B PATIL,Bharatiya Janata Party,50316,Belgaum Rural,Mumbai Karnataka,Lost,0
+Other,Others,28311,Belgaum Rural,Mumbai Karnataka,Lost,0
+PATIL SHIVANAGOUDA S,Janata Dal (Secular),3794,Belgaum Rural,Mumbai Karnataka,Lost,0
+None of the Above,None of the Above,1958,Belgaum Rural,Mumbai Karnataka,Lost,0
+ANIL S BENAKE,Bharatiya Janata Party,79060,Belgaum Uttar,Mumbai Karnataka,Won,1
+FAIROZ NURUDDIN SAITH,Indian National Congress,61793,Belgaum Uttar,Mumbai Karnataka,Lost,0
+Other,Others,4069,Belgaum Uttar,Mumbai Karnataka,Lost,0
+ASHFAQ AHMED MADAKI,Janata Dal (Secular),1143,Belgaum Uttar,Mumbai Karnataka,Lost,0
+None of the Above,None of the Above,1361,Belgaum Uttar,Mumbai Karnataka,Lost,0
+B NAGENDRA,Indian National Congress,79186,Bellary,Hyderabad Karnataka,Won,1
+SANNA PAKKIRAPPA,Bharatiya Janata Party,76507,Bellary,Hyderabad Karnataka,Lost,0
+D RAMESH,Janata Dal (Secular),3212,Bellary,Hyderabad Karnataka,Lost,0
+Other,Others,2528,Bellary,Hyderabad Karnataka,Lost,0
+None of the Above,None of the Above,1695,Bellary,Hyderabad Karnataka,Lost,0
+G. SOMASEKHARA REDDY,Bharatiya Janata Party,76589,Bellary City,Hyderabad Karnataka,Won,1
+ANIL.H. LAD,Indian National Congress,60434,Bellary City,Hyderabad Karnataka,Lost,0
+MOHAMAD IQBAL HOTHUR,Janata Dal (Secular),6255,Bellary City,Hyderabad Karnataka,Lost,0
+Other,Others,6973,Bellary City,Hyderabad Karnataka,Lost,0
+None of the Above,None of the Above,1016,Bellary City,Hyderabad Karnataka,Lost,0
+HARISH POONJA,Bharatiya Janata Party,98417,Belthangady,Coastal Karnataka,Won,1
+K.VASANTHA BANGERA,Indian National Congress,75443,Belthangady,Coastal Karnataka,Lost,0
+Other,Others,2833,Belthangady,Coastal Karnataka,Lost,0
+SUMATHI S HEGDE,Janata Dal (Secular),1612,Belthangady,Coastal Karnataka,Lost,0
+None of the Above,None of the Above,1245,Belthangady,Coastal Karnataka,Lost,0
+LINGESHA. K.S.,Janata Dal (Secular),64268,Belur,Old Mysore,Won,1
+H.K. SURESH,Bharatiya Janata Party,44578,Belur,Old Mysore,Lost,0
+KEERTHANA RUDRESHAGOWDA,Indian National Congress,39519,Belur,Old Mysore,Lost,0
+Other,Others,2808,Belur,Old Mysore,Lost,0
+None of the Above,None of the Above,1106,Belur,Old Mysore,Lost,0
+B.K.SANGAMESHWARA.,Indian National Congress,75722,Bhadravati,Central Karnataka,Won,1
+APPAJI.M.J.,Janata Dal (Secular),64155,Bhadravati,Central Karnataka,Lost,0
+PRAVEEN PATEL.G.R.,Bharatiya Janata Party,8974,Bhadravati,Central Karnataka,Lost,0
+Other,Others,2599,Bhadravati,Central Karnataka,Lost,0
+None of the Above,None of the Above,1427,Bhadravati,Central Karnataka,Lost,0
+ESHWAR KHANDRE,Indian National Congress,84673,Bhalki,Hyderabad Karnataka,Won,1
+D K SIDRAM,Bharatiya Janata Party,63235,Bhalki,Hyderabad Karnataka,Lost,0
+KHANDRE PRAKASH,Janata Dal (Secular),15142,Bhalki,Hyderabad Karnataka,Lost,0
+Other,Others,2966,Bhalki,Hyderabad Karnataka,Lost,0
+None of the Above,None of the Above,1042,Bhalki,Hyderabad Karnataka,Lost,0
+SUNIL BILIYA NAIK,Bharatiya Janata Party,83172,Bhatkal,Coastal Karnataka,Won,1
+MANKAL VAIDYA,Indian National Congress,77242,Bhatkal,Coastal Karnataka,Lost,0
+Other,Others,3486,Bhatkal,Coastal Karnataka,Lost,0
+None of the Above,None of the Above,1986,Bhatkal,Coastal Karnataka,Lost,0
+RAHIM KHAN,Indian National Congress,73270,Bidar,Hyderabad Karnataka,Won,1
+SURAYAKANTH NAGMARPALLI,Bharatiya Janata Party,63025,Bidar,Hyderabad Karnataka,Lost,0
+Other,Others,3638,Bidar,Hyderabad Karnataka,Lost,0
+None of the Above,None of the Above,690,Bidar,Hyderabad Karnataka,Lost,0
+BANDEPPA,Janata Dal (Secular),55107,Bidar South,Hyderabad Karnataka,Won,1
+DR SHAILENDRA BELDALE,Bharatiya Janata Party,42365,Bidar South,Hyderabad Karnataka,Lost,0
+ASHOK KHENY,Indian National Congress,35131,Bidar South,Hyderabad Karnataka,Lost,0
+Other,Others,5327,Bidar South,Hyderabad Karnataka,Lost,0
+None of the Above,None of the Above,957,Bidar South,Hyderabad Karnataka,Lost,0
+BASANAGOUD .R. PATIL (YATNAL),Bharatiya Janata Party,76308,Bijapur City,Mumbai Karnataka,Won,1
+ABDUL HAMEED MUSHRIF,Indian National Congress,69895,Bijapur City,Mumbai Karnataka,Lost,0
+BELLUBBI SANGAPPA KALLAPPA,Janata Dal (Secular),2083,Bijapur City,Mumbai Karnataka,Lost,0
+Other,Others,2018,Bijapur City,Mumbai Karnataka,Lost,0
+None of the Above,None of the Above,1399,Bijapur City,Mumbai Karnataka,Lost,0
+MURUGESH RUDRAPPA NIRANI,Bharatiya Janata Party,85135,Bilgi,Central Karnataka,Won,1
+JAGADISH TIMMANAGOUDA PATIL,Indian National Congress,80324,Bilgi,Central Karnataka,Lost,0
+SANGAPPA TIPPANNA KANDAGAL,Janata Dal (Secular),1773,Bilgi,Central Karnataka,Lost,0
+Other,Others,5238,Bilgi,Central Karnataka,Lost,0
+None of the Above,None of the Above,848,Bilgi,Central Karnataka,Lost,0
+SATHISH REDDY M,Bharatiya Janata Party,111863,Bommanahalli,Bengaluru Karnataka,Won,1
+SUSHMA RAJAGOPALA REDDY,Indian National Congress,64701,Bommanahalli,Bengaluru Karnataka,Lost,0
+T R PRASAD,Janata Dal (Secular),9379,Bommanahalli,Bengaluru Karnataka,Lost,0
+Other,Others,7076,Bommanahalli,Bengaluru Karnataka,Lost,0
+None of the Above,None of the Above,2491,Bommanahalli,Bengaluru Karnataka,Lost,0
+BALLARY VIRUPAKSHAPPA RUDRAPPA,Bharatiya Janata Party,91721,Byadgi,Central Karnataka,Won,1
+S.R.PATIL,Indian National Congress,70450,Byadgi,Central Karnataka,Lost,0
+Other,Others,3193,Byadgi,Central Karnataka,Lost,0
+None of the Above,None of the Above,1469,Byadgi,Central Karnataka,Lost,0
+KRISHNA BYREGOWDA,Indian National Congress,114964,Byatarayanapura,Bengaluru Karnataka,Won,1
+A RAVI,Bharatiya Janata Party,109293,Byatarayanapura,Bengaluru Karnataka,Lost,0
+CHANDRA T G,Janata Dal (Secular),22490,Byatarayanapura,Bengaluru Karnataka,Lost,0
+Other,Others,4808,Byatarayanapura,Bengaluru Karnataka,Lost,0
+None of the Above,None of the Above,2154,Byatarayanapura,Bengaluru Karnataka,Lost,0
+B. M. SUKUMAR SHETTY,Bharatiya Janata Party,96029,Byndoor,Coastal Karnataka,Won,1
+K. GOPALA POOJARY,Indian National Congress,71636,Byndoor,Coastal Karnataka,Lost,0
+Other,Others,5503,Byndoor,Coastal Karnataka,Lost,0
+RAVI SHETTY,Janata Dal (Secular),1911,Byndoor,Coastal Karnataka,Lost,0
+None of the Above,None of the Above,1647,Byndoor,Coastal Karnataka,Lost,0
