@@ -10,7 +10,7 @@ library(rsconnect)
 library(readr)
 library(googleVis)
 
-initial_data = as.data.frame(read_csv("./data/Karnataka1.csv",col_names = TRUE))
+initial_data = as.data.frame(read_csv("./data/Karnataka3.csv",col_names = TRUE))
 
 ui <- dashboardPage(
   
@@ -24,8 +24,9 @@ ui <- dashboardPage(
                 ".csv")
     ),
     sidebarMenu(
-    menuItem("Data", tabName = "Data", icon = icon("dashboard")),
-    menuItem("River", tabName = "River", icon = icon("dashboard"))
+    
+    menuItem("River", tabName = "River", icon = icon("dashboard")),
+    menuItem("Data", tabName = "Data", icon = icon("dashboard"))
     ),
     
   uiOutput("selections"), downloadButton("downloadData","Download filtered data")
@@ -37,7 +38,7 @@ ui <- dashboardPage(
                 uiOutput("radio"),
               uiOutput("dropdown"), tabsetPanel(
                 tabPanel("Sankey"
-              ,plotlyOutput("river",height = 700)), 
+              ,plotlyOutput("river",height = 750)), 
               tabPanel("Sun burst",sunburstOutput("sunburst")),
               tabPanel("GoogleVis",htmlOutput("gviswidget"))
       )),
@@ -114,10 +115,15 @@ server <- function(input, output) {
       my_data=initial_data
     
     #nums <- unlist(lapply(x, is.numeric))
+    numerics= names(Filter(is.numeric, my_data))
     allName = names(my_data)
     nonnumerics= allName[!(allName %in% names(Filter(is.numeric, my_data)))]
     
-    selectInput("slevel","Select 2 or more categories (Ordered, river flow and sunburst layers)",choices = nonnumerics,multiple = TRUE)
+    ss= allName[1:which(allName==numerics[1])]
+    
+    
+    #selectInput("slevel","Select 2 or more categories (Ordered, river flow and sunburst layers)",choices = nonnumerics,multiple = TRUE,selected = c(nonnumerics[1],nonnumerics[2]))
+    selectInput("slevel","Select 2 or more categories (Ordered, river flow and sunburst layers)",choices = nonnumerics,multiple = TRUE,selected = ss)
   })
   
   
@@ -197,7 +203,11 @@ server <- function(input, output) {
         #SUM is the aggregate function. This can be made dynamic. For sankey plots COUNT, SUM are ideal.
         querywhile = paste0("select ",input$slevel[whilei]," as Fromf, ",input$slevel[whilei+1]," as Tote, Sum(",input$variable,") as '",input$variable,"' from my_data group by ",input$slevel[whilei], ", ",input$slevel[whilei+1])
         
-        bubdata = rbind( bubdata,sqldf(querywhile))
+        #removing rows with zero sum
+        t = sqldf(querywhile)
+        t=t[t[,3]>0,]
+        
+        bubdata = rbind( bubdata,t)
         
         whilei = whilei+1
       }
@@ -208,7 +218,6 @@ server <- function(input, output) {
       #googlevis package allows to map just by names and no need for index. But googleVis currently does not have total when you hover on the node.
       bubdata$sor = match(bubdata$Fromf,labb)-1
       bubdata$tar = match(bubdata$Tote,labb)-1
-      
       
       plot_ly(
         type = "sankey",
