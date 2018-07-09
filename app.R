@@ -17,7 +17,7 @@ ui <- dashboardPage(
   dashboardHeader(title = "Whole-Part"), skin = "purple",
   
   dashboardSidebar(
-    fileInput("file1", "Choose CSV File", multiple = FALSE,
+    fileInput("file1", "Choose CSV File. Format: category1, category2, metric1, <any>....", multiple = FALSE,
               accept = c(
                 "text/csv",
                 "text/comma-separated-values,text/plain",
